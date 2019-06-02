@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SAF-A26</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK:400,700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
+        <div class="hamburger">
+            <img src="img/hamburger.png" alt="hamburger">
+        </div>
+        <div class="links">
+            <a href="#" class="active link">Accueil</a>
+            <a href="#presentation" class="link">Présentation</a>
+            <a href="#frigo" class="link">Hangars frigorifiques</a>
+            <a href="#sec" class="link">Hangar sec</a>
+            <a href="#contact" class="link">Nous contacter</a>
+        </div>
+    </nav>
+
+    <main class="main">
+        <section id="presentation" class="presentation">
+            <div class="presentation-left">
+                <hr align="left" class="presentation-hr">
+                <h1 class="presentation-title">SAF A26</h1>
+                <h3 class="presentation-subtitle">Société Artésienne Frigorifique</h3>
+                <p class="presentation-text">
+                    <span>La SAF A26 est une entreprise de stockage frigorifique implantée à Quéant (62860).</span><br>
+                    <span>Celle-ci permet de stocker 8 000 palettes à une température de -23°C dans 4 hangars
+                        différents.</span><br>
+                    <span>Désormais, la SAF A26 possède un hangar de 2 000 m² permettant de stocker des produits
+                        secs.</span>
+                </p>
+            </div>
+            <div class="presentation-right">
+                <img src="img/logo.png" alt="logo">
+            </div>
+        </section>
+        <div class="parallax-ext">
+            <div class="parallax-color"></div>
+        </div>
+        <section id="frigo" class="frigo section">
+            <h1 class="section-title">Hangars frigorifiques</h1>
+            <hr class="section-hr">
+            <p class="section-text">La SAF A26 possède 4 hangars frigorifiques. Ceux-ci ont une température égale à
+                -23°C et permettent de stocker jusqu'à 8 000 palettes.<br>Voici la galerie photo des différentes rangées
+                de stockage.</p>
+            <div class="frigo-portfolio">
+                <img src="img/ets/frigo1-1.jpg" alt="frigo1" class="portfolio-item">
+                <img src="img/ets/frigo1-2.jpg" alt="frigo1" class="portfolio-item">
+                <img src="img/ets/frigo2.jpg" alt="frigo2" class="portfolio-item">
+                <img src="img/ets/frigo3.jpg" alt="frigo3" class="portfolio-item">
+                <img src="img/ets/frigo4.jpg" alt="frigo4" class="portfolio-item">
+            </div>
+        </section>
+        <div class="parallax-int">
+            <div class="parallax-color"></div>
+        </div>
+        <section id="sec" class="sec section">
+            <h1 class="section-title">Hangar sec</h1>
+            <hr class="section-hr">
+            <p class="section-text">La SAF A26 possède désormais un nouvel hangar permettant de stocker des produits
+                secs. Celui-ci a une capacité de 2 000 m².<br>Retrouvez les photos ci-dessous.</p>
+            <div class="sec-portfolio">
+                <img src="img/ets/hangarg.jpg" alt="sec" class="portfolio-item">
+                <img src="img/ets/hangard.jpg" alt="sec" class="portfolio-item">
+            </div>
+        </section>
+        <div class="bg-grey">
+            <section id="contact" class="contact section">
+                <h1 class="section-title">Nous contacter</h1>
+                <hr class="section-hr">
+                <div class="infos">
+                    <div class="maps">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2554.9616041943705!2d2.988943451366266!3d50.180554214555215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2b3e7e221f91d%3A0xcb583edf1ea1bca9!2sSoc+Artesienne+Frigorifique+A26!5e0!3m2!1sfr!2sfr!4v1559425720101!5m2!1sfr!2sfr"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="coords">
+                        <p>
+                            <strong>SAF A26</strong><br>41 Grande'rue<br>Quéant, 62860<br><strong>Tel :
+                            </strong>06.66.66.66.66
+                        </p>
+                        <p>
+                            <strong>Email : </strong><br><a href="mailto:email@email.com">email@email.com</a>
+                        </p>
+                        <p>
+                            <strong>Horaires : </strong><br>Du lundi au vendredi : 8h - 17h
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="" method="POST" enctype="application/x-www-form-urlencoded" class="contact-row">
+                        <div class="contact-col">
+                            <div class="form-group">
+                                <label for="nom">Nom</label>
+                                <input type="text" name="nom" id="nom" placeholder="Entrer votre nom">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email" placeholder="Entrer votre email">
+                            </div>
+                            <div class="form-group">
+                                <label for="sujet">Sujet</label>
+                                <input type="text" name="sujet" id="sujet" placeholder="Entrer le sujet">
+                            </div>
+                        </div>
+                        <div class="contact-col">
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" placeholder="Entrer votre message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="button" name="btEnvoyer" class="envoyer" value="Envoyer">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a href="#mentions">Mentions légales</a> - <a href="#">Retour en haut</a>
+        <hr>
+        <p class="copyright">Copyright &copy; 2019 SAF A26 - Tous droits réservés.</p>
+    </footer>
+    <script src="js/hamburger.js"></script>
+</body>
+
+</html>

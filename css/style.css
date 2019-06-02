@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    color: #505050;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a.active,
+a:hover {
+    color: #112380;
+}
+hr {
+    border: 1px solid #fff;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, .1);
+}
+.logo img {
+    width: 150px;
+    vertical-align: middle;
+}
+.links .link {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+}
+.hamburger {
+    display: none;
+}
+.presentation {
+    color: #222222;
+    width: 70%;
+    margin: 15px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.presentation-left {
+    width: 60%;
+}
+.presentation-right {
+    width: 30%;
+}
+.presentation-right img {
+    width: 100%;
+}
+.presentation-hr {
+    border-width: 3px;
+    border-color: #112380;
+    width: 255px;
+}
+.presentation-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 8em;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.presentation-subtitle {
+    margin: 0;
+    font-size: 1.9em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.presentation-text {
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+.presentation-text span {
+    display: block;
+    margin: 2px 0;
+}
+.section {
+    width: 70%;
+    margin: 0 auto;
+}
+.section-title {
+    font-size: 2.3em;
+    text-align: center;
+    margin: 25px 0;
+}
+.section-hr {
+    width: 100px;
+    margin: 0 auto;
+    border-color: #112380;
+}
+.section-text {
+    text-align: center;
+    line-height: 1.6em;
+    font-size: 1.2em;
+}
+.frigo-portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-gap: 10px;
+}
+.sec-portfolio {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+.portfolio-item {
+    width: 100%;
+}
+.bg-grey {
+    background: #f6f6f6;
+}
+.contact {
+    width: 55%;
+    padding-bottom: 40px;
+}
+.infos {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+}
+.maps iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+.coords {
+    text-align: center;
+}
+.coords p:nth-child(2) {
+    margin: 30px 0;
+}
+.contact-form {
+    border: 1px solid #505050;
+    border-radius: 10px;
+    margin: 30px auto 0 auto;
+    padding: 40px;
+    width: 65%;
+}
+.contact-form form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+.contact-col {
+    width: 100%;
+}
+.form-group label {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.form-group input {
+    height: 35px;
+}
+.form-group textarea {
+    height: 120px;
+}
+.form-group .envoyer {
+    height: 35px;
+    text-transform: uppercase;
+    color: #505050;
+    background: #fff;
+    border: 2px solid #505050;
+    border-radius: 5px;
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.parallax-ext {
+    background: url("../img/ets/quai_ext.jpg") fixed center no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.parallax-int {
+    background: url("../img/ets/quai_int.jpg") fixed center no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-top: 10px;
+}
+.parallax-color {
+    background: #0099ff62;
+    height: 300px;
+}
+.footer {
+    background: #505050;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px;
+}
+.footer hr {
+    width: 150px;
+}
+.footer .copyright {
+    margin: 0;
+}
+@media screen and (max-width: 1230px) {
+    .presentation-left {
+        width: 100%;
+    }
+    .presentation-right {
+        display: none;
+    }
+    .parallax-ext,
+    .parallax-int,
+    .parallax-color {
+        height: 250px;
+    }
+    .contact-form {
+        width: 75%;
+    }
+    .contact-form form {
+        grid-template-columns: 100%;
+        grid-gap: 0;
+    }
+}
+@media screen and (max-width: 930px) {
+    .sec-portfolio,
+    .infos {
+        grid-template-columns: 100%;
+    }
+    .nav {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .links {
+        display: none;
+        transition: ease-in-out 0.3s;
+    }
+    .links .link {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+        margin-left: auto;
+        width: 60px;
+        cursor: pointer;
+    }
+    .hamburger img {
+        width: 100%;
+        vertical-align: middle;
+    }
+}
+@media screen and (max-width: 730px) {
+    .presentation-title {
+        font-size: 5em;
+    }
+    .presentation-subtitle {
+        font-size: 1.5em;
+    }
+    .presentation-text {
+        font-size: 1em;
+    }
+    .parallax-ext,
+    .parallax-int,
+    .parallax-color {
+        height: 180px;
+    }
+    .frigo-portfolio {
+        grid-template-columns: 50% 50%;
+    }
+    .contact-form {
+        width: 85%;
+    }
+}
