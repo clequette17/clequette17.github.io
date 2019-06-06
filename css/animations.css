@@ -9,7 +9,7 @@
     }
 }
 .anim-opacity {
-    animation: opacity 1.5s ease-out;
+    animation: opacity 1s ease-out;
 }
 @keyframes scale {
     from {

@@ -188,12 +188,12 @@ hr {
     cursor: pointer;
 }
 .parallax-ext {
-    background: url("../img/ets/quai_ext.jpg") fixed center no-repeat;
+    background: url("../img/ets/quai_ext.png") fixed center no-repeat;
     background-size: cover;
     height: 300px;
 }
 .parallax-int {
-    background: url("../img/ets/quai_int.jpg") fixed center no-repeat;
+    background: url("../img/ets/quai_int.png") fixed center no-repeat;
     background-size: cover;
     height: 300px;
     margin-top: 10px;
