@@ -51,7 +51,6 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    animation: opacity 1.5s ease-in-out;
 }
 .presentation-left {
     width: 60%;
@@ -208,6 +207,7 @@ hr {
     color: whitesmoke;
     text-align: center;
     padding: 5px;
+    bottom: 0;
 }
 .footer hr {
     width: 150px;
