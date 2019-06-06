@@ -16,12 +16,21 @@ a:hover {
 hr {
     border: 1px solid #fff;
 }
+.white-space {
+    white-space: nowrap;
+}
 .nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 5px;
     box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, .1);
+    animation: nav .7s ease-out;
+    z-index: 10;
 }
 .logo img {
     width: 150px;
@@ -38,10 +47,11 @@ hr {
 .presentation {
     color: #222222;
     width: 70%;
-    margin: 15px auto 0 auto;
+    margin: 54px auto 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    animation: opacity 1.5s ease-in-out;
 }
 .presentation-left {
     width: 60%;
@@ -74,7 +84,7 @@ hr {
     line-height: 1.5em;
     font-size: 1.2em;
 }
-.presentation-text span {
+.presentation-span {
     display: block;
     margin: 2px 0;
 }
@@ -236,7 +246,6 @@ hr {
     }
     .links {
         display: none;
-        transition: ease-in-out 0.3s;
     }
     .links .link {
         display: block;
@@ -244,7 +253,7 @@ hr {
     .hamburger {
         display: block;
         margin-left: auto;
-        width: 60px;
+        width: 40px;
         cursor: pointer;
     }
     .hamburger img {

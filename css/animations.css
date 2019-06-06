@@ -1,0 +1,37 @@
+@keyframes nav {
+    from {
+        transform: translateY(-100px);
+    }
+}
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+}
+.anim-opacity {
+    animation: opacity .7s ease-out;
+}
+@keyframes bounceInRight {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(30px);
+    }
+}
+.anim-bounce-in-right {
+    animation: bounceInRight 1s ease-in-out;
+}
+@keyframes bounceInLeft {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(-30px);
+    }
+}
+.anim-bounce-in-left {
+    animation: bounceInLeft 1s ease-in-out;
+}
