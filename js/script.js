@@ -34,8 +34,8 @@
                 if ($(this).hasClass('section-text') || $(this).hasClass('coords')) $(this).addClass('anim-fade-left');
                 if ($(this).hasClass('presentation')|| $(this).hasClass('portfolio-item')) $(this).addClass('anim-opacity');
                 if ($(this).hasClass('maps')) $(this).addClass('anim-fadeIn');
+                $(this).css('visibility', 'visible');
             }
-            $(this).css('visibility', 'visible');
         });
     });
     $(window).scroll();
