@@ -154,7 +154,7 @@ hr {
 .contact-form form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 30px;
 }
 .contact-col {
     width: 100%;
@@ -217,6 +217,10 @@ hr {
     margin: 0;
 }
 @media screen and (max-width: 1230px) {
+    .presentation,
+    .section {
+        width: 75%;
+    }
     .presentation-left {
         width: 100%;
     }
@@ -228,18 +232,22 @@ hr {
     .parallax-color {
         height: 250px;
     }
-    .contact-form {
-        width: 75%;
-    }
     .contact-form form {
         grid-template-columns: 1fr;
         grid-gap: 0;
     }
 }
 @media screen and (max-width: 930px) {
+    .presentation,
+    .section {
+        width: 80%;
+    }
     .sec-portfolio,
     .infos {
         grid-template-columns: 1fr;
+    }
+    .contact-form {
+        width: 100%;
     }
     .nav {
         display: grid;
@@ -263,6 +271,10 @@ hr {
     }
 }
 @media screen and (max-width: 730px) {
+    .presentation,
+    .section {
+        width: 85%;
+    }
     .presentation-title {
         font-size: 5em;
     }
@@ -281,7 +293,6 @@ hr {
         grid-template-columns: 1fr 1fr;
     }
     .contact-form {
-        width: 100%;
         padding: 25px;
     }
 }
