@@ -42,6 +42,7 @@ hr {
     padding: 10px;
 }
 .hamburger {
+    margin-right: 5px;
     display: none;
 }
 .presentation {
@@ -148,11 +149,12 @@ hr {
     border-radius: 10px;
     margin: 30px auto 0 auto;
     padding: 40px;
+    box-sizing: border-box;
     width: 65%;
 }
 .contact-form form {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
 }
 .contact-col {

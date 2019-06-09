@@ -11,15 +11,6 @@
 .anim-opacity {
     animation: opacity 1s ease-out;
 }
-@keyframes scale {
-    from {
-        opacity: 0;
-        transform: scale(0);
-    }
-}
-.anim-scale {
-    animation: scale .5s ease-in;
-}
 @keyframes bounceInRight {
     0% {
         transform: translateX(-1000px);
@@ -43,4 +34,31 @@
 }
 .anim-bounce-in-left {
     animation: bounceInLeft 1s ease-in-out;
+}
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+}
+.anim-fade-left {
+    animation: fadeLeft 1s ease-in-out;
+}
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+}
+.anim-fade-right {
+    animation: fadeRight 1s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+.anim-fadeIn {
+    animation: fadeIn 1s ease-in-out;
 }
