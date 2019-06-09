@@ -57,7 +57,7 @@ hr {
     width: 60%;
 }
 .presentation-right {
-    width: 30%;
+    width: 35%;
 }
 .presentation-right img {
     width: 100%;
@@ -109,12 +109,12 @@ hr {
 }
 .frigo-portfolio {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
 }
 .sec-portfolio {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
 }
 .portfolio-item {
@@ -124,13 +124,12 @@ hr {
     background: #f6f6f6;
 }
 .contact {
-    width: 55%;
     padding-bottom: 40px;
 }
 .infos {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 .maps iframe {
@@ -233,18 +232,18 @@ hr {
         width: 75%;
     }
     .contact-form form {
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
         grid-gap: 0;
     }
 }
 @media screen and (max-width: 930px) {
     .sec-portfolio,
     .infos {
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
     }
     .nav {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
     }
     .links {
         display: none;
@@ -279,9 +278,10 @@ hr {
         height: 180px;
     }
     .frigo-portfolio {
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 1fr 1fr;
     }
     .contact-form {
-        width: 85%;
+        width: 100%;
+        padding: 25px;
     }
 }

@@ -19,6 +19,10 @@
         }, 1000);
     });;
 
+    $('.presentation, .section-head, .section-text, .maps, .coords, .portfolio-item, .contact-form').each(function() {
+        $(this).css('visibility', 'hidden');
+    });
+
     $(window).scroll(function () {
         $('.presentation, .section-head, .section-text, .maps, .coords, .portfolio-item, .contact-form').each(function () {
             let elTop = $(this).offset().top;
@@ -31,6 +35,7 @@
                 if ($(this).hasClass('presentation')|| $(this).hasClass('portfolio-item')) $(this).addClass('anim-opacity');
                 if ($(this).hasClass('maps')) $(this).addClass('anim-fadeIn');
             }
+            $(this).css('visibility', 'visible');
         });
     });
     $(window).scroll();
