@@ -19,10 +19,11 @@ hr {
 .white-space {
     white-space: nowrap;
 }
-.nav {
+.header {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 45px;
     background: #fff;
     display: flex;
     justify-content: space-around;
@@ -36,7 +37,7 @@ hr {
     width: 150px;
     vertical-align: middle;
 }
-.links .link {
+.nav .link {
     display: inline-block;
     cursor: pointer;
     padding: 10px;
@@ -48,16 +49,16 @@ hr {
 .presentation {
     color: #222222;
     width: 70%;
-    margin: 54px auto 0 auto;
+    margin: 55px auto 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .presentation-left {
-    width: 60%;
+    width: calc(100% - 570px);
 }
 .presentation-right {
-    width: 35%;
+    width: 550px;
 }
 .presentation-right img {
     width: 100%;
@@ -129,7 +130,7 @@ hr {
 .infos {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
 }
 .maps iframe {
@@ -146,18 +147,21 @@ hr {
 .contact-form {
     border: 1px solid #505050;
     border-radius: 10px;
-    margin: 30px auto 0 auto;
-    padding: 40px;
+    margin: 0 auto;
+    padding: 20px 40px;
     box-sizing: border-box;
-    width: 65%;
+    width: 75%;
 }
 .contact-form form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
 }
-.contact-col {
-    width: 100%;
+.form-group {
+    margin: 5px 0;
+}
+.contact-col .form-group:first-child {
+    margin-top: 0;
 }
 .form-group label {
     display: block;
@@ -216,52 +220,37 @@ hr {
 .footer .copyright {
     margin: 0;
 }
-@media screen and (max-width: 1230px) {
-    .presentation,
-    .section {
-        width: 75%;
-    }
+@media screen and (max-width: 1550px) {
     .presentation-left {
         width: 100%;
+        text-align: center;
     }
     .presentation-right {
         display: none;
     }
-    .parallax-ext,
-    .parallax-int,
-    .parallax-color {
-        height: 250px;
-    }
-    .contact-form form {
-        grid-template-columns: 1fr;
-        grid-gap: 0;
+    .presentation-hr {
+        margin: 0 auto;
     }
 }
-@media screen and (max-width: 930px) {
-    .presentation,
-    .section {
-        width: 80%;
-    }
-    .sec-portfolio,
-    .infos {
-        grid-template-columns: 1fr;
-    }
+@media screen and (max-width: 1250px) {
     .contact-form {
         width: 100%;
     }
-    .nav {
+}
+@media screen and (max-width: 930px) {
+    .header {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    .links {
+    .nav {
         display: none;
     }
-    .links .link {
+    .nav .link {
         display: block;
     }
     .hamburger {
         display: block;
-        margin-left: auto;
+        justify-self: end;
         width: 40px;
         cursor: pointer;
     }
@@ -269,30 +258,29 @@ hr {
         width: 100%;
         vertical-align: middle;
     }
-}
-@media screen and (max-width: 730px) {
+    .nav-toggle {
+        display: block;
+    }
+    .frigo-portfolio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .sec-portfolio {
+        grid-template-columns: 100%;
+    }
     .presentation,
     .section {
         width: 85%;
     }
-    .presentation-title {
-        font-size: 5em;
+}
+@media screen and (max-width: 750px) {
+    .infos {
+        grid-template-columns: 100%;
     }
-    .presentation-subtitle {
-        font-size: 1.5em;
+    .contact-form form {
+        grid-template-columns: 100%;
     }
-    .presentation-text {
-        font-size: 1em;
-    }
-    .parallax-ext,
-    .parallax-int,
-    .parallax-color {
-        height: 180px;
-    }
-    .frigo-portfolio {
-        grid-template-columns: 1fr 1fr;
-    }
-    .contact-form {
-        padding: 25px;
+    .presentation,
+    .section {
+        width: 90%;
     }
 }
