@@ -71,7 +71,7 @@ hr {
 .presentation-title {
     margin: 0;
     font-weight: 700;
-    font-size: 8em;
+    font-size: 6em;
     line-height: 1;
     text-transform: uppercase;
 }
@@ -229,7 +229,7 @@ hr {
         display: none;
     }
     .presentation-hr {
-        margin: 0 auto;
+        margin: .5em auto;
     }
 }
 @media screen and (max-width: 1250px) {

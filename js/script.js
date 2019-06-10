@@ -5,7 +5,7 @@
 
     $('.nav .link, .footer a').on('click', function (e) {
         if ($('.nav').hasClass('nav-toggle')) $('.nav').removeClass('nav-toggle');
-        let top = $($(this).attr('href')).offset().top - $('.nav').outerHeight();
+        let top = $($(this).attr('href')).offset().top - $('.header').outerHeight();
         $('html').stop().animate({
             scrollTop: top
         }, 1000);
