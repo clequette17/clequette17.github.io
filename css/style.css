@@ -71,7 +71,7 @@ hr {
 .presentation-title {
     margin: 0;
     font-weight: 700;
-    font-size: 6em;
+    font-size: 5.8em;
     line-height: 1;
     text-transform: uppercase;
 }
@@ -282,5 +282,10 @@ hr {
     .presentation,
     .section {
         width: 90%;
+    }
+    .parallax-ext,
+    .parallax-int,
+    .parallax-color {
+        height: 170px;
     }
 }
