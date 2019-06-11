@@ -146,7 +146,7 @@ hr {
 .contact-form {
     border: 1px solid #505050;
     border-radius: 10px;
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     padding: 20px 40px;
     box-sizing: border-box;
     width: 75%;
